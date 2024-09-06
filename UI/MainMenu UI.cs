@@ -24,5 +24,7 @@ public class MainMenuUI : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         });
+
+        Time.timeScale = 1f;
     }
 }

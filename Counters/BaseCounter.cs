@@ -4,7 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BaseCounter : MonoBehaviour, IKitchenObjectParents
-{ 
+{
+    public static void ResetStaticData()
+    {
+        Onobjectdropped = null;
+    }
+
 
     [SerializeField] private Transform counterTopoint;
 
