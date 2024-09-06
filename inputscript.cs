@@ -14,6 +14,7 @@ public class inputscript : MonoBehaviour
     public event EventHandler OnInteract;
     public event EventHandler OnInteractAlternate;
     public event EventHandler OnPauseAction;
+    public event EventHandler OnBindingRebind;
 
     public enum Binding
     {
@@ -136,10 +137,6 @@ public class inputscript : MonoBehaviour
                 inputAction = actions.player.InteractAlternate;
                 bindingIndex = 0;
                 break;
-            case Binding.Pause:
-                inputAction = actions.player.Pause;
-                bindingIndex = 0;
-                break;
         }
 
         inputAction.PerformInteractiveRebinding(bindingIndex)
@@ -151,6 +148,8 @@ public class inputscript : MonoBehaviour
 
                 PlayerPrefs.SetString(PLAYER_PREFS_BINDINGS, actions.SaveBindingOverridesAsJson());
                 PlayerPrefs.Save();
+
+                OnBindingRebind?.Invoke(this, EventArgs.Empty);
 
             })
             .Start();

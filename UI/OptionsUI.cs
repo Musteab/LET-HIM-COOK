@@ -19,14 +19,12 @@ public class OptionsUI : MonoBehaviour
     [SerializeField] private Button moveRightButton;
     [SerializeField] private Button interactButton;
     [SerializeField] private Button altInteractButton;
-    [SerializeField] private Button pauseButton;
     [SerializeField] private TextMeshProUGUI moveUpText;
     [SerializeField] private TextMeshProUGUI moveDownText;
     [SerializeField] private TextMeshProUGUI moveLeftText;
     [SerializeField] private TextMeshProUGUI moveRightText;
     [SerializeField] private TextMeshProUGUI interactText;
     [SerializeField] private TextMeshProUGUI altInteractText;
-    [SerializeField] private TextMeshProUGUI pauseText;
     [SerializeField] private Transform pressToRebindKey;
 
     private void Awake()
@@ -70,10 +68,6 @@ public class OptionsUI : MonoBehaviour
         {
             RebindingKey(inputscript.Binding.AltInteract);
         });
-        pauseButton.onClick.AddListener(() =>
-        {
-            RebindingKey(inputscript.Binding.Pause);
-        });
 
 
     }
@@ -101,7 +95,6 @@ public class OptionsUI : MonoBehaviour
         moveRightText.text = inputscript.Instance.GetBindingText(inputscript.Binding.Move_Right);
         interactText.text = inputscript.Instance.GetBindingText(inputscript.Binding.Interact);
         altInteractText.text = inputscript.Instance.GetBindingText(inputscript.Binding.AltInteract);
-        pauseText.text = inputscript.Instance.GetBindingText(inputscript.Binding.Pause);
 
 
     }

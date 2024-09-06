@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
+using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class SoundManager : MonoBehaviour
 {
@@ -70,6 +71,14 @@ public class SoundManager : MonoBehaviour
     public void PlayFootstepSound(Vector3 position, float volumeMultiplier)
     {
         PlaySound(audioRefScriptableObject.footstep, position, volumeMultiplier * volume);
+    }
+    public void PlayCountDownSound()
+    {
+        PlaySound(audioRefScriptableObject.warning, Camera.main.transform.position);
+    }
+    public void PlayWarningSound(Vector3 postion)
+    {
+        PlaySound(audioRefScriptableObject.warning, postion);
     }
     public void ChangeVolumne()
     {
