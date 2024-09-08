@@ -14,7 +14,10 @@
 - **Avoid burning**: Avoid burning the meat (Unless specified)!
 ## 🛠️ Installation
 - The game is free to play, clone the repo and unzip the final game build.
-<img src="https://github.com/user-attachments/assets/8eb45275-d42a-4826-a5bc-b967a15f7066" alt="Screenshot 2024-09-08 031846" width="400"/>
+    ```bash
+    git clone https://github.com/yourusername/LET-HIM-COOK.git
+    ```
+
 
 ### Unzip the final game build
 <img src="https://github.com/user-attachments/assets/e487c48f-a15b-41bf-9664-5fdae93cb249" alt="Screenshot 2024-09-08 030636" width="400"/>
@@ -29,7 +32,7 @@
 - Contributions are welcome! If you'd like to help improve this project, please fork the repo and submit a pull request.
 
 📄 License
-- This project is licensed under the MIT License - see the LICENSE file for details.
+- This project is licensed under the MIT License - see the  [LICENSE](LICENSE) file for details.
 
 📫 Contact
 - For questions or feedback, feel free to reach out:
