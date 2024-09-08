@@ -32,7 +32,8 @@
 - Contributions are welcome! If you'd like to help improve this project, please fork the repo and submit a pull request.
 
 📄 License
-- This project is licensed under the MIT License - see the  [LICENSE](LICENSE) file for details.
+- This project is licensed under the MIT License - see the  [LICENSE](LICENSE.txt
+) file for details.
 
 📫 Contact
 - For questions or feedback, feel free to reach out:
